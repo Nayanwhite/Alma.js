@@ -1,0 +1,255 @@
+
+// ARRAYS OF JAVASCRIPT
+
+const list = [
+  'ram', 'swham', 'kaju'
+] // by using [] we can create areays.
+
+console.log(list)
+const listnumber = [ 1,7,9,20] // using "number" word we can add numbers in array.
+
+console.log(listnumber)
+
+const newdata = [ 'ram', 'swam', 500, true]
+
+console.log(newdata)
+
+const newData = [
+    {'task1': 'exercise'},
+    [1, 2 ,3],
+    function zello() {
+      console.log('hoho')
+    }
+];
+
+console.log(newData)
+
+
+const zData = [
+  'kgf', 'puspa', '3 idiot', 100, true,
+  function results(){confused}
+]
+
+console.log(zData) // using Data array we can add strings, numbers, functions all primitives.
+
+
+const xy= [
+  'krisna', 'ram', 'kana', 'kala', 'makhoncor'
+]
+
+console.log(xy[4]); // makhoncor
+console.log(xy[0][2]) // i // 0=krisna & 2= krishna's word number 2
+
+
+// push & unshift use.
+
+xy.push('harekrisna');
+console.log(xy) // push is used to add anything at last.
+
+xy.unshift('Narayan')
+console.log(xy) // unshift is used to add anything in front.
+
+
+listnumber[2]= 100;
+console.log(listnumber) // it can replace the number after 2.
+
+listnumber[4]= 110;
+console.log(listnumber) // if we use it at last number then it add the letest number.
+
+listnumber.pop();  // ".pop" is used to remove last element.
+console.log(listnumber)
+
+listnumber.shift();// ".shift" is used for removing 1st element.
+console.log(listnumber);
+
+console.log(listnumber.length); // it count & print the length of provided arrays.
+
+
+
+let Fastivals= ['Durgapuja','Gaseshchaturthi','Ramnabami','Kalipuja','Lakshmipuja' ]
+
+let numbers = [10,12,13,14,15,18,22,25,30,55]
+
+let Newpuja= ['lakshminarayan']
+
+Fastivals.sort(); // ".sort" is used for Arrange in alphabetical order.
+console.log(Fastivals);
+
+const position= Fastivals.indexOf('Kalipuja');  //".indexOf" is used to locate the position of the element.  
+console.log(position)
+
+const newFastivals = Fastivals.slice(1); // confused!! basically it separate the array.
+console.log(newFastivals) 
+
+const adding= Fastivals.concat(numbers);
+// ".concat" add to Arrays.
+console.log(adding)
+console.log('space please')
+
+const big = numbers.filter(checkbig);
+function checkbig(numbers) {
+  return numbers > 15;
+} // ". function " is used to filter any arrays.
+console.log(big)
+
+let X = [12,13,19,18,10]
+const Xx= X.filter(checkXx);
+function checkXx (X) {
+  return X > 12;}
+
+console.log(Xx)
+
+console.log('Notice this is Sqrt')
+const big_sqrt= big.map(Math.sqrt)
+console.log(big_sqrt)
+
+
+
+//Working of JavaScript Arrays
+
+let arr = ['h','i','j']
+let arr1= arr; //Since arrays are objects, the array elements are stored by reference. Hence, when an array value is copied, any change in the copied array will also reflect in the original array. For example,
+
+arr.push('k')
+console.log(arr1)
+console.log(arr)
+arr.unshift('A')
+
+  console.log (arr1)
+
+let are= ['r','a','m']
+  are.name = ('ji');
+
+console.log(are.name)
+console.log(are)
+
+// multidimensional array
+
+const Zdata= [[1,2],[5,6],[8,8]];
+console.log(Zdata) 
+
+// Example 1
+let studentsdata = [['ram',1],['kam',2],['jam',3]]
+
+console.log(studentsdata)
+
+// Example 2
+let students1data = ['ram','roll-1','class-5','sec-A','contact no- 12Xxxxxxxx']
+  let studentsdata2 = ['kam','roll-2', 'class-5','sec-A']
+
+console.log(students1data)
+console.log(studentsdata2)
+
+     let schooldata = [students1data, studentsdata2] // we can do this.
+
+console.log(schooldata)
+
+  //Access Elements of an Array
+
+let F = [
+  ['ram',01,'B'],
+  ['sits',02,'B'],
+['lakshman',03,'B'],
+  ['Hanuman',04,'B']
+];
+console.log(F[1])
+console.log(F[0][0])
+console.log(F[2] [0] [4])
+
+  //...
+
+  // Adding Element to the Outer Array
+
+F.push(['banargan',05,'B'])
+console.log(F)
+
+// Adding Element to the inner Array
+
+// Example 1
+F[1][3]= 'modified'
+
+console.log(F[1])
+
+     // Example 2
+F[2].push= 'modified'
+console.log(F[2])
+// Note: it good but it abb 'push' exta . like - 'push : modified,'
+
+             // Example 3
+F.splice(0,1,['ramji','01','B'])
+console.log(F[0])
+//Note: ".splice([])" actually replace the total element.
+
+  console.log(F)
+
+  //Remove an Element from a Multidimensional Array.
+
+//Example 1
+F.pop() // it removes last element.
+console.log(F)
+
+//Example 2
+F[3].pop()
+console.log(F) // this removes elements last element. 
+
+// Example 3
+F.splice(3,1)
+console.log(F) // by ".splice(_,_)" we can remove perticular element. 
+
+//Note: "splice(first number use for not removable element , & second number use for which need to remove."
+
+//ITERATING OVER MULTIDIMENSIONAL ARRAY
+
+// Example 1
+// Bookish knowledge;
+
+let studentsData = [['Jack', 24], ['Sara', 23],];
+
+// iterating over the studentsData
+studentsData.forEach((student) => {
+    student.forEach((data) => {
+        console.log(data);});});
+
+// My practice 
+
+let kau = [['jimi',11],['Rimi',15]];
+
+kau.forEach((k) => {
+  k.forEach((au) => {
+console.log(au);
+  });
+});
+
+//Example 2
+// Bookish knowledge ( use of "for..of"
+let studentsDatak = [['Jack', 24], ['Sara', 23],];
+
+for (let i of studentsDatak) {
+  for (let j of i) {
+    console.log(j);
+  };};
+
+// my practice
+
+let bigboss = [['big',3],['boss',4]];
+
+for(let i of bigboss){
+  for(let j of i){
+    console.log(j);
+  }
+}
+// Example 3
+
+let studentsDatakg = [['Jack', 24], ['Sara', 23],];
+
+// looping outer array elements
+for(let i = 0; i < studentsDatakg.length; i++){
+
+    // get the length of the inner array elements
+    let innerArrayLength = studentsDatakg[i].length;
+
+    // looping inner array elements
+    for(let j = 0; j < innerArrayLength; j++) {
+        console.log(studentsDatakg[i][j]);
+    }
+}
