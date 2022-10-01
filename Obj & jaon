@@ -1,1 +1,259 @@
-hy
+const x = 5, y = 3;
+
+(x < 6) && (y < 5); // true
+
+console.log(x < 6);
+
+console.log(y > 5);
+
+const data= {
+
+  Raju:{
+
+    class:10,
+
+    roll:01,
+
+    subject:'science',
+
+    school:'BDHS'
+
+  },
+
+  Kaju:{
+
+    class:11,
+
+    roll:01,
+
+    subject: 'Arts',
+
+    school:'BDHS',
+
+  },
+
+};
+
+console.log(data.Kaju)
+
+const person = {
+
+    name: 'Sam',
+
+    age: 30,
+
+    // using function as a value
+
+    greet: function() { console.log('hello') }
+
+}
+
+person.greet(); // hello
+
+const char= {
+
+  name:'kg',
+
+  age: 20,
+
+  greet: function () {
+
+    console.log('hy')
+
+  }
+
+}
+
+char.greet();
+
+    char.mane2='kk';
+
+console.log(char)
+
+const per = {
+
+    name: 'John',
+
+    age: 30,
+
+    // accessing name property by using this.name
+
+    greet: function() { console.log('The name is' + ' ' + this.name); }
+
+};
+
+per.greet();
+
+const hr ={
+
+  name :'Ruku',
+
+Address : 'Kolkata',
+
+age: 25,
+
+  greet: function () { console.log ('The hr is'+ ' ' +this.name); }
+
+}
+
+hr.greet();
+
+const pk ={
+
+  name:'pog',
+
+  address: 'log',
+
+greet: function(){
+
+  console.log('address is'+' '+this.address)
+
+}
+
+}
+
+pk.greet();
+
+//...............................//
+
+console.log('.......................')
+
+const zz = 'zz is a \'trick\'';
+
+console.log(zz);
+
+console.log('.......................')
+
+const pp= `
+
+hi this caret symbol is 'grate' 
+
+not only 
+
+        'grate'      it is "legendary" ðŸ˜Ž ðŸ˜‡ ðŸŒž , \\ // ,~ |â€¢ âˆš Ï€ Ã· Ã— Â¶ âˆ† Â£ Â¢ â‚¬ Â¥ ^ Â° = { } \ % Â© Â® â„¢ âœ“ [ ] ALL IN ONE SOLUTION FOR PRINTING 
+
+        
+
+`
+
+console.log(pp);
+
+// By using `` caret symbol we can print anything..//
+
+console.log('........... there is some critical function/ it also can use............')
+
+console.log('.......................')
+
+console.log('hi lets \b try backspace');
+
+console.log('.......................')
+
+console.log('hy lets try \n new line');
+
+console.log('.......................')
+
+console.log('ho try \\/ backslash ');
+
+console.log('.......................')
+
+console.log('hi lets try \r carriage return');
+
+console.log('.......................')
+
+console.log('hy lets try \v vertical tab')
+
+console.log('.......................')
+
+console.log('ho lets try \t horizontal tab')
+
+console.log('.......................')
+
+console.log('hi lets try \f form feed');
+
+console.log('.......................')
+
+let aksy = [1,2.4,5,9];
+
+aksy[01] = 23;
+
+  console.log(aksy);
+
+          
+
+// Interview Questions //
+
+var string = "Welcome to this Javascript Guide!";
+
+console.log(string);
+
+// Output becomes !ediuG tpircsavaJ siht ot emocleW
+
+var reverseEntireSentence = reverseBySeparator(string, "");
+
+console.log(reverseEntireSentence);
+
+// Output becomes emocleW ot siht tpircsavaJ !ediuG
+
+var reverseEachWord = reverseBySeparator(reverseEntireSentence, " ");
+
+console.log(reverseEachWord);
+
+function reverseBySeparator(string, separator) {
+
+  return string.split(separator).reverse().join(separator);
+
+    };
+
+//................................//
+
+//Example 1
+
+const foo = [1, 2, 3];
+
+const bar = [...foo];
+
+console.log(bar);
+
+//Example 2
+
+const ak = [1,'ik',8];
+
+const bb = [...ak];
+
+console.log(bb);
+
+//Example 3
+
+const all = [...bar,...bb];
+
+console.log(all)
+
+//................................//
+
+// JSON to javascript
+
+const jsonData = '{ "name": "John", "age": 22 }';
+
+console.log(jsonData);
+
+// converting to JavaScript object
+
+const obj = JSON.parse(jsonData);
+
+// accessing the data
+
+console.log(obj);
+
+console.log('..........................');
+
+// javascript to JSON
+
+const akj = {name:'raju',vill: 'kgf'};
+
+console.log(akj);
+
+const akjpro = JSON.stringify(akj);
+
+console.log(akjpro);
+
+console.log('............................')
